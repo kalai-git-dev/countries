@@ -5,3 +5,31 @@
   display: flex;
   flex-wrap: wrap;
 }
+.search-bar {
+  background-color: rgb(190, 188, 188);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.search-range input {
+  cursor: pointer;
+}
+.search-radio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-radio li {
+  margin-right: 40px;
+}
+
+.search-radio li label {
+  font-size: 20px;
+  color: rgb(7, 112, 131);
+  font-weight: bold;
+}
+.search-radio li:hover label {
+  cursor: pointer;
+  color: aquamarine;
+}

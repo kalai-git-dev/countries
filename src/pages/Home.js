@@ -37,8 +37,8 @@ function Home() {
 
   return (
     <div>
-      <div>
-        <div>
+      <div className="search-bar">
+        <div className="search-range">
           <input
             value={rangeValue}
             type="range"
@@ -51,7 +51,7 @@ function Home() {
           />
           <label htmlFor="range">Countries :{rangeValue}</label>
         </div>
-        <ul>
+        <ul className="search-radio">
           {radios.map((radio, index) => {
             return (
               <li key={index}>

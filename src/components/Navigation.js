@@ -10,10 +10,10 @@ function Navigation() {
       </Link>
       <div className="links">
         <NavLink exact to="/" activeClassName="nav-active">
-          acceuil
+          countries
         </NavLink>
         <NavLink exact to="/about" activeClassName="nav-active">
-          a propos
+          A propos
         </NavLink>
       </div>
     </div>
