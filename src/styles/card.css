@@ -1,2 +1,39 @@
-/* .card {
-} */
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 25px 15px;
+}
+.country {
+  position: relative;
+  border-radius: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(27, 26, 26, 0.803);
+  border-radius: 5px;
+}
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.overlay p {
+  color: blanchedalmond;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px;
+  text-transform: capitalize;
+}
+.country-name {
+  width: 200px;
+  text-align: center;
+  margin-top: 5px;
+}

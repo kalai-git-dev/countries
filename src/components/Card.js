@@ -1,23 +1,31 @@
 import React from "react";
 
-function Countries({ country }) {
+function Card({ country }) {
+  const numberFormat = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  };
   return (
-    <>
-      <div className="card">
+    <div className="card">
+      <div className="country">
         <img
           src={country.flag}
           alt="flag"
-          style={{ width: 200, height: 130, objectFit: "cover" }}
+          style={{
+            width: 200,
+            height: 130,
+            objectFit: "cover",
+            borderRadius: 5,
+          }}
         />
-        <div>
+        <div className="overlay">
           <p>capital :{country.capital}</p>
           <p>région : {country.region}</p>
-          <p>population : {country.population}</p>
+          <p>population : {numberFormat(country.population)}</p>
         </div>
       </div>
-      <p>{country.name}</p>
-    </>
+      <p className="country-name">{country.name}</p>
+    </div>
   );
 }
 
-export default Countries;
+export default Card;
